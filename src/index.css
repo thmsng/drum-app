@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+#drum-machine{
+  background-color: lightgreen;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+}
+
+.title{
+  position: absolute;
+  bottom:0;
+  left:0;
+  font-size: 25px;
+}
+
+#display{
+  background-color: lightgrey;
+  height: 400px;
+  width: 600px;
+  border: 4px solid orange;
+  justify-content: center;
+  align-items: center;
+  display: inherit;
+}
+
+.bank-pads{
+  height: 300px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 8px;
+  padding: 5px;
+  margin: 0 15px 0 20px;
+}
+
+.drum-pad{
+  background: lightgreen;
+  padding-top: 25px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: grey 3px 3px 5px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.control-panel{
+  height: 300px;
+  background-color: white;
+  margin: 0 20px 0 15px;
+  border: 2px solid orange;
+}
+
+#change-power{
+  height: 35px;
+  width: 30%;
+  border: 2px solid orange;
+  color: black;
+  background: white;
+  margin: 25px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#change-sound{
+  height: 35px;
+  width: 50%;
+  border: 2px solid orange;
+  color: black;
+  margin: 25px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.drum-pad:hover,#change-power:hover,#change-sound:hover{
+  opacity: 1;
+}
+
+.bankOne{
+  background-color: lightblue;
+}
+
+.bankTwo{
+  background-color: lightyellow;
+}
+
+#volume-button {
+  -webkit-appearance: none;
+  margin:15px;
+  width: 70%;
+  height: 25px;
+  border-radius: 12px;
+  background: lightgrey;
+  outline: none;
+  opacity: 0.8;
+}
+
+#volume-button:hover{
+  opacity: 1;
+}
+
+.volume-number{
+  margin: 25px;
+}
+
+#display-text{
+  width: 100%;
+  display: flex;
+  transform: translate(25px,10px);
+}
+
+
+#volume-button::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: lightgreen;
+  cursor: pointer;
+}
